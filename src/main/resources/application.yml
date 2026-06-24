@@ -1,0 +1,20 @@
+server:
+  port: 8094
+  servlet:
+    context-path: /realtime
+
+realtime:
+  enabled: true
+  websocket:
+    enabled: true
+    path: /websocket/subscribe
+  eventbus:
+    type: memory
+    async: true
+  storage:
+    type: memory
+  thread-pool:
+    core-pool-size: 5
+    max-pool-size: 20
+    queue-capacity: 100
+    keep-alive-seconds: 60
