@@ -2,9 +2,9 @@ package com.realtimes.service.event;
 
 import com.realtimes.framework.api.event.Event;
 
-public class InitSingleLineTroubleEvent implements Event {
+public class NewRealDataEvent implements Event {
 
-    public static final String TYPE = "INIT_SINGLE_LINE_TROUBLE";
+    public static final String TYPE = "NEW_REAL_DATA";
 
     @Override
     public String getType() {
@@ -13,7 +13,6 @@ public class InitSingleLineTroubleEvent implements Event {
 
     @Override
     public String getName() {
-        return "初始化单线路故障列表";
+        return "新实时数据";
     }
 }
-
