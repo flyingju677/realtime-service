@@ -1,13 +1,17 @@
 server:
-  port: 8094
+  port: 8894
   servlet:
-    context-path: /realtime
+    context-path: /myrealtime
 
 realtime:
   enabled: true
   websocket:
     enabled: true
     path: /websocket/subscribe
+    heartbeat:
+      enabled: true
+      interval: 5000
+      timeout: 15000
   eventbus:
     type: memory
     async: true
